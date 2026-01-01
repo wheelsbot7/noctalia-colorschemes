@@ -48,7 +48,7 @@ function readThemeJson(dirPath) {
  * Extract all color values from a variant (dark or light)
  */
 function extractColors(variant) {
-  if (!variant || typeof variant !== 'object') return [];
+  if (!variant || typeof variant !== 'object') return {};
 
   const colorKeys = [
     'mPrimary', 'mOnPrimary',
@@ -61,7 +61,13 @@ function extractColors(variant) {
     'mHover', 'mOnHover'
   ];
 
-  return colorKeys.map(key => variant[key]).filter(Boolean);
+  const result = {};
+  for (const key of colorKeys) {
+    if (variant[key]) {
+      result[key] = variant[key];
+    }
+  }
+  return result;
 }
 
 /**

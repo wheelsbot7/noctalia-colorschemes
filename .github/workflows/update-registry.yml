@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '**/*.json'
-      - '.github/workflows/update-registry.js'
   workflow_dispatch:
 
 jobs:

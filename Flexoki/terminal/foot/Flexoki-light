@@ -1,0 +1,26 @@
+[colors]
+background = FFFCF0
+foreground = 100F0F
+
+cursor = 100F0F FFFCF0
+
+selection-foreground = 100F0F
+selection-background = CECDC3
+
+regular0 = 100F0F
+regular1 = AF3029
+regular2 = 66800B
+regular3 = AD8301
+regular4 = 205EA6
+regular5 = A02F6F
+regular6 = 24837B
+regular7 = 6F6E69
+
+bright0 = B7B5AC
+bright1 = D14D41
+bright2 = 879A39
+bright3 = D0A215
+bright4 = 4385BE
+bright5 = CE5D97
+bright6 = 3AA99F
+bright7 = CECDC3
